@@ -1,0 +1,5 @@
+path add /u/
+path remove /u/
+path clear
+ls
+exit

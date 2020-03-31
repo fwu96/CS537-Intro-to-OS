@@ -1,0 +1,4 @@
+echo batch2
+ls ; pwd
+ls -l & echo end
+exit
