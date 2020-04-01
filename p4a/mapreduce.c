@@ -62,6 +62,14 @@ void* init_redu (void *arg) {
     }
     return arg;
 }
+// TODO: get_next for Combiner
+char* next_comb (char *key) {
+
+}
+// TODO: Helper function for Combiner when pthread_create
+void* init_comb (void *arg) {
+
+}
 // key-value comparison
 int comp_pair (const void *p1, const void *p2) {
     struct pairs *kv1 = (struct pairs*)p1;
@@ -80,6 +88,10 @@ int sort_files (const void *p1, const void *p2) {
     stat(f2->name, &st2);
     long int s1 = st1.st_size, s2 = st2.st_size;
     return (s1 - s2);
+}
+// TODO: EmitToCombiner
+void MR_EmitToCombiner (char *key, char *value) {
+
 }
 // EmitToReducer
 void MR_EmitToReducer (char *key, char *value) {
